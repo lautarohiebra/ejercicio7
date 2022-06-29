@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #7cf05f;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #052770, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #48a0f3, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+
+}
+
+.container {
+    max-width: 1500px;
+}
+
+header {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 30%;
+    position: fixed;
+    z-index: -1;
+    margin: 0 35%;
+}
+
+    header h1{
+        font-size: 100px;
+        color: rgb(247, 247, 247);
+        text-shadow: 5px 5px  rgba(76, 107, 247, 0.911);
+        background-color: #1d1d1d;
+        padding: 10px;
+        border: 5px dashed rgb(247, 247, 247);
+        border-radius: 15px;
+        box-shadow: 5px 5px rgba(42, 62, 151, 0.911);
+    }
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #1d1d1d;
+    margin: 215px 10%;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 30px rgb(3, 3, 3);
+    border-top: 5px solid rgb(46, 46, 46);
+    min-width: 344px;
+}
+
+    main h2{
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        font-family: monospace sans-serif;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        font-style: oblique;
+        text-shadow: 2px 2px 10px rgb(77, 77, 77);
+        padding: 10px 10px;
+    }
+
+section { 
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 15px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: #b4b4b4 solid 2px;
+}
+
+.contenidoCaja{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction:column;
+    position: relative;
+}
+
+    .contenidoCaja h3{
+        text-align: end;
+        font-size: 30px;
+        width: 50%;
+        background-color: #292929;
+        margin-bottom: -40px;
+        z-index: 0;
+        color: rgb(248, 248, 248);
+        padding-right: 5px;
+        font-size: 25px;
+        font-weight: lighter;
+        box-shadow: 5px 5px #256afd;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+img{
+    width: 100%;
+    border: 5px solid #292929;
+    box-shadow: 5px 0px #256afd;
+    z-index: 0;
+}
+
+    figcaption{
+        box-shadow: 5px 5px #256afd;
+        margin-top: -8px;
+        z-index: 1;
+    }
+
+        figcaption p{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #222222;
+            color: white;
+            font-weight: bold;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        figcaption p:nth-of-type(2){
+            font-weight: lighter;
+            background-color: #e0e0e0;
+            color: #111111;
+            margin: 10px 0px;
+        }
+
+form {
+    position:absolute;
+    right: 0;
+}
+
+button {
+    width: 160px ;
+    height: 40px;
+    background-color: #fa443d;
+    position: relative;
+    right: 10px;
+    font-size: larger;
+    border: #313131 2px solid;
+}
+
+button:hover{
+    color: white;
+    background-color: #052770;
+    width: 170px;
+}
+
+footer {
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1d1d1d, #111111);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #222222, #111111); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border-top: #111111 2px groove;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    margin-bottom: 0px;
+    padding-bottom: 40px;
+    padding-top: 5px;
+    height: 100px;
+    width: 100vw;
+    height: 120px;
+}
+
+    footer span{
+        color: #b4b4b4;
+        font-family: 'Courier New', Courier, monospace;
+        padding-top: 20px;
+    }
+
+        footer span::after{
+            content: url(../img/facebook.svg) url(../img/twitter.svg) url(../img/discord.svg) url(../img/instagram.svg);
+        /*     content: url(../img/twitter.svg); */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            margin-top:10px;
+        }
